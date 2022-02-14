@@ -1,0 +1,38 @@
+{
+  "name": "donation-contract",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:network": "npx hardhat node",
+    "dev:contract": "npx hardhat run --network localhost scripts/donation-script.js",
+    "rinkeby:contract": "npx hardhat run --network rinkeby scripts/donation-script.js",
+    "test:unit": "npx hardhat test",
+    "test:coverage": "npx hardhat coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devbulat/donation-contract.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devbulat/donation-contract/issues"
+  },
+  "homepage": "https://github.com/devbulat/donation-contract#readme",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.0",
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "chai": "^4.3.6",
+    "ethereum-waffle": "^3.2.0",
+    "ethers": "^5.0.0",
+    "hardhat": "^2.8.4",
+    "web3": "^1.7.0"
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-waffle": "^2.0.2",
+    "dotenv": "^16.0.0",
+    "solidity-coverage": "^0.7.19"
+  }
+}
